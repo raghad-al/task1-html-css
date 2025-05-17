@@ -9,6 +9,7 @@
     --main-color2:#F5F7FA;
     --main-color3:#263238;
     --main-color4:#FFFFFF;
+    --main-color5:#18191F;
     --paragraph-color:#717171;
     --heading-color:#4D4D4D;
     --main-weight1:600;/*for imporatnt heading*/
@@ -30,9 +31,10 @@ body{
     margin: auto;
 }
 
-.container section:nth-child(even) {
+.container section:nth-child(odd) {
   background-color: var(--main-color2);
 }
+
 
 /* small screen */
 @media screen and (max-width:767px){
@@ -54,3 +56,56 @@ body{
         max-width: 1024px;
     }
 }
+
+/* header section */
+.header-container{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: sticky;
+    top:0;
+}
+
+#logo-img{
+    width: 154px;
+    height: 24px;
+}
+
+#links-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+ 
+#links-container .link{
+    color: var(--main-color5);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#login-signup-container{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+   background-color: transparent;
+   border: none;
+   border-radius: 6px;
+   padding: 10px 20px;
+}
+
+#login-btn{
+    color: var(--main-color1);
+}
+
+#signup-btn{
+    color: #FFFFFF;
+    background-color: var(--main-color1);
+}
+
