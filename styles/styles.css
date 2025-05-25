@@ -450,7 +450,7 @@ section.community-container {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        width: 50px;
+        width: 40px;
         cursor: pointer;
     }
 
@@ -467,7 +467,7 @@ section.community-container {
         right: 0;
         background-color: var(--main-color2);
         z-index: 1;
-        
+        display: none;
     }
 
     #links-container {
@@ -516,8 +516,4 @@ section.community-container {
         padding-right: 144px;
 
     }
-}
-
-.hide{
-    display: none;
 }
