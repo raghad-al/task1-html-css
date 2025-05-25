@@ -467,6 +467,7 @@ section.community-container {
         right: 0;
         background-color: var(--main-color2);
         z-index: 1;
+        
     }
 
     #links-container {
