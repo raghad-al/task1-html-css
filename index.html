@@ -37,6 +37,7 @@
                 <li>
                     <a href="#" class="link">FAQ</a>
                 </li>
+                
             </ul>
         </nav>
 
@@ -710,20 +711,29 @@
     <script>
         const menuBtn = document.getElementById("menu-container");
         const navBar = document.getElementById("navbar-section");
-        
+
         let navBarShown = false;
 
-        menuBtn.addEventListener("click",()=>{
-        
-            if(!navBarShown){
+        menuBtn.addEventListener("click", () => {
+
+            if (!navBarShown) {
                 navBar.style.display = "block";
                 navBarShown = true;
             }
-            else{
+            else {
                 navBar.style.display = "none";
                 navBarShown = false;
             }
         })
+
+        window.addEventListener('resize', () => {
+            console.log('Window width:', window.innerWidth);
+            console.log('Window height:', window.innerHeight);
+
+            if (window.innerWidth >= 940) {
+                navBar.style.display = "block";
+            }
+        });
     </script>
 </body>
 
