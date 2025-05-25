@@ -17,7 +17,7 @@
 <body>
     <header class="header-container container">
         <img src="./assets/images/logo.png" alt="webiste logo" id="logo-img">
-        <nav id="navbar-section" class="hide">
+        <nav id="navbar-section">
             <ul id="links-container">
                 <li>
                     <a href="#" class="link">home</a>
@@ -708,8 +708,21 @@
     </section>
 
     <script>
-        document.getElementById("menu-container").addEventListener("click",function(){
-            document.getElementById("navbar-section").classList.toggle("hide");
+        const menuBtn = document.getElementById("menu-container");
+        const navBar = document.getElementById("navbar-section");
+        
+        let navBarShown = false;
+
+        menuBtn.addEventListener("click",()=>{
+        
+            if(!navBarShown){
+                navBar.style.display = "block";
+                navBarShown = true;
+            }
+            else{
+                navBar.style.display = "none";
+                navBarShown = false;
+            }
         })
     </script>
 </body>
