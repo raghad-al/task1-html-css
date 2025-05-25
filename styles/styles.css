@@ -472,6 +472,10 @@ section.community-container {
         display: none;
     }
 
+    #login-signup-container{
+        display: none;
+    }
+    
     #links-container {
         flex-direction: column;
         align-items: flex-start;
